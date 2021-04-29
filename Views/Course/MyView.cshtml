@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="text-center">
+        <h3>
+            @ViewBag.Greeting student ,how are you?
+        </h3>
+        <h4>
+            Hope,You will enjoy the course.
+        </h4>
+
+        <a asp-action="apply" class="btn btn-primary"> Apply the course </a>
+
+    </div>
+
+    
+</body> 
+</html>

@@ -1,0 +1,29 @@
+﻿@model Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="text-center">
+
+    <h2> Teşekkürler @Model.Name </h2>
+    <hr />
+    @if (Model.WillAttend == true)
+     {
+        @:Kursa katıldığınız için tşk
+     }
+    else
+    {
+        @:kursa katılmadığınız için üzgünüz
+    }
+
+    Kursa katılanları <a asp-action="List" class="nav-link ">liste.</a>
+</body>
+</html>
